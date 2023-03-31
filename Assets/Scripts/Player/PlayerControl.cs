@@ -49,7 +49,7 @@ public class PlayerControl : MonoBehaviour
         {
             Physics2D.IgnoreLayerCollision(3, 7, false);
             TangiTimer = 0;
-            if (Input.GetKeyDown(KeyCode.I))
+            if (Input.GetKeyDown(KeyCode.LeftShift))
             {
                 Tangible = false;
             }
