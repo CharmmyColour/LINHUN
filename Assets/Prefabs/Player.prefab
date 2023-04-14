@@ -61,7 +61,7 @@ MonoBehaviour:
   Walled: 0
   IsGround:
     serializedVersion: 2
-    m_Bits: 192
+    m_Bits: 1216
   CurrState: 0
   NoJColor: {r: 0, g: 0, b: 0, a: 0}
   OneJColor: {r: 0, g: 0, b: 0, a: 0}
@@ -71,6 +71,7 @@ MonoBehaviour:
   JumpSpeed: 7
   AirJumps: 0
   MaxJumps: 1
+  RespawnPos: {x: 0, y: 0}
 --- !u!50 &4968418945617195028
 Rigidbody2D:
   serializedVersion: 4

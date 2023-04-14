@@ -23,12 +23,14 @@ public class PlayerControl : MonoBehaviour
 
     //Keeping track
     private int MoveX, MoveY;
+    public Vector2 RespawnPos;
 
     // Start is called before the first frame update
     void Start()
     {
         Tangible = true;
         TangiTimer = 0;
+        RespawnPos = transform.position;
     }
 
     // Update is called once per frame
@@ -69,7 +71,7 @@ public class PlayerControl : MonoBehaviour
             case CharStates.Normal:
                 RB2D.gravityScale = 1;
 
-                if (MoveX != 0)
+                if (MoveX != 0 && RB2D.velocity.y >= 0)
                 {
                     transform.localScale = new Vector3(1 * MoveX, 1, 1);
                     transform.position += new Vector3(transform.localScale.x, 0, 0) * Speed * Time.deltaTime;
@@ -110,27 +112,38 @@ public class PlayerControl : MonoBehaviour
                 }
                 break;
         }
+
+        if(transform.position.y < -20) { Death(); }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.transform.tag == "Ground")
         {
-            if (Cealed == true || Grounded == true)
-            {
-                CurrState = CharStates.Normal;
-                RB2D.velocity = new Vector2(0, 0);
-            }
-            else if (Walled == true)
+            CurrState = CharStates.Normal;
+            RB2D.velocity = new Vector2(0, 0);
+        }
+        if (collision.transform.tag == "Grabbable")
+        {
+            if (Walled == true)
             {
                 CurrState = CharStates.WallHang;
                 RB2D.velocity = new Vector2(0, 0);
             }
+        }
+        if (collision.transform.tag == "Danger")
+        {
+            Death();
         }
     }
 
     public void JumpsRestore()
     {
         AirJumps = MaxJumps;
+    }
+
+    public void Death()
+    {
+        transform.position = RespawnPos;
     }
 }
