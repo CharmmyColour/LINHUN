@@ -7,8 +7,8 @@ public class PlayerControl : MonoBehaviour
     //External elements
     public Rigidbody2D RB2D;
     public Transform GroundPoint, CealingPoint, WallPointA, WallPointB;
-    public bool Grounded, Cealed, Walled;
-    public LayerMask IsGround;
+    public bool Grounded, Cealed, Walled, Grabbed;
+    public LayerMask IsGround, IsGrab;
 
     //States
     public enum CharStates { Normal, FloUp, FloDown, WallHang };
@@ -41,6 +41,7 @@ public class PlayerControl : MonoBehaviour
         Grounded = Physics2D.OverlapCircle(GroundPoint.position, 0.05f, IsGround);
         Cealed = Physics2D.OverlapCircle(CealingPoint.position, 0.05f, IsGround);
         Walled = Physics2D.OverlapArea(WallPointA.position, WallPointB.position, IsGround);
+        Grabbed = Physics2D.OverlapArea(WallPointA.position, WallPointB.position, IsGrab);
 
         if (Grounded == true)
         {
@@ -84,11 +85,25 @@ public class PlayerControl : MonoBehaviour
                 }
                 break;
             case CharStates.FloUp:
+                //Action
                 RB2D.velocity = new Vector3(Speed * transform.localScale.x, JumpSpeed);
 
+                //Input for jump
                 if (Input.GetButtonDown("Jump"))
                 {
                     CurrState = CharStates.FloDown;
+                }
+
+                //Check for walls
+                if(Grabbed == true)
+                {
+                    CurrState = CharStates.WallHang;
+                    RB2D.velocity = new Vector2(0, 0);
+                }
+                else if (Walled== true) 
+                {
+                    CurrState = CharStates.Normal;
+                    RB2D.velocity = new Vector2(0, 0);
                 }
                 break;
             case CharStates.FloDown:
@@ -99,6 +114,11 @@ public class PlayerControl : MonoBehaviour
                     CurrState = CharStates.FloUp;
                     AirJumps -= 1;
                 }
+                if (Grounded == true)
+                {
+                    CurrState = CharStates.Normal;
+                    RB2D.velocity = new Vector2(0, 0);
+                }
                 break;
             case CharStates.WallHang:
                 RB2D.velocity = new Vector2(0, 0);
@@ -108,7 +128,16 @@ public class PlayerControl : MonoBehaviour
                 {
                     transform.localScale = new Vector3(transform.localScale.x * -1, 1, 1);
                     CurrState = CharStates.FloUp;
-                    AirJumps -= 1;
+                }
+                if(Grabbed != true)
+                {
+                    CurrState = CharStates.Normal;
+                    RB2D.velocity = new Vector2(0, 0);
+                }
+                if(Grounded == true)
+                {
+                    CurrState = CharStates.Normal;
+                    RB2D.velocity = new Vector2(0, 0);
                 }
                 break;
         }
@@ -125,7 +154,7 @@ public class PlayerControl : MonoBehaviour
         }
         if (collision.transform.tag == "Grabbable")
         {
-            if (Walled == true)
+            if (Grabbed == true)
             {
                 CurrState = CharStates.WallHang;
                 RB2D.velocity = new Vector2(0, 0);
@@ -145,5 +174,7 @@ public class PlayerControl : MonoBehaviour
     public void Death()
     {
         transform.position = RespawnPos;
+        CurrState = CharStates.Normal;
+        RB2D.velocity = new Vector2(0, 0);
     }
 }
