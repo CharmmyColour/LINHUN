@@ -7,12 +7,12 @@ public class PlayerControl : MonoBehaviour
     //External elements
     public Rigidbody2D RB2D;
     public Transform GroundPoint, CealingPoint, WallPointA, WallPointB;
-    public bool Grounded, Cealed, Walled, Grabbed;
+    public static bool Grounded, Cealed, Walled, Grabbed;
     public LayerMask IsGround, IsGrab;
 
     //States
     public enum CharStates { Normal, FloUp, FloDown, WallHang };
-    public CharStates CurrState;
+    public static CharStates CurrState;
     public Color NoJColor, OneJColor;
     public bool Tangible;
     public float TangiTimer;

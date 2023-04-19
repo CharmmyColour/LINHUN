@@ -177,7 +177,7 @@ AnimatorStateTransition:
     m_ConditionEvent: isGrounded
     m_EventTreshold: 0
   - m_ConditionMode: 2
-    m_ConditionEvent: isWalled
+    m_ConditionEvent: isHanging
     m_EventTreshold: 0
   - m_ConditionMode: 2
     m_ConditionEvent: isHurt
@@ -299,7 +299,7 @@ AnimatorStateTransition:
     m_ConditionEvent: isGrounded
     m_EventTreshold: 0
   - m_ConditionMode: 2
-    m_ConditionEvent: isWalled
+    m_ConditionEvent: isHanging
     m_EventTreshold: 0
   - m_ConditionMode: 2
     m_ConditionEvent: isJumping
@@ -362,7 +362,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: isWalled
+    m_ConditionEvent: isHanging
     m_EventTreshold: 0
   - m_ConditionMode: 2
     m_ConditionEvent: isGrounded
@@ -396,7 +396,7 @@ AnimatorStateTransition:
     m_ConditionEvent: isGrounded
     m_EventTreshold: 0
   - m_ConditionMode: 2
-    m_ConditionEvent: isWalled
+    m_ConditionEvent: isHanging
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 2100877491922259678}
@@ -528,7 +528,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: isWalled
+    m_ConditionEvent: isHanging
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 3574259322340960242}
@@ -581,7 +581,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: isWalled
+    m_ConditionEvent: isHanging
     m_EventTreshold: 0
   - m_ConditionMode: 2
     m_ConditionEvent: isGrounded
@@ -756,7 +756,7 @@ AnimatorStateTransition:
     m_ConditionEvent: isGrounded
     m_EventTreshold: 0
   - m_ConditionMode: 2
-    m_ConditionEvent: isWalled
+    m_ConditionEvent: isHanging
     m_EventTreshold: 0
   - m_ConditionMode: 2
     m_ConditionEvent: isHurt
@@ -855,7 +855,7 @@ AnimatorStateTransition:
     m_ConditionEvent: isGrounded
     m_EventTreshold: 0
   - m_ConditionMode: 2
-    m_ConditionEvent: isWalled
+    m_ConditionEvent: isHanging
     m_EventTreshold: 0
   - m_ConditionMode: 2
     m_ConditionEvent: isHurt
@@ -895,7 +895,7 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: isWalled
+  - m_Name: isHanging
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -1005,7 +1005,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: isWalled
+    m_ConditionEvent: isHanging
     m_EventTreshold: 0
   - m_ConditionMode: 6
     m_ConditionEvent: SpeedMovement
@@ -1190,7 +1190,7 @@ AnimatorStateTransition:
     m_ConditionEvent: isGrounded
     m_EventTreshold: 0
   - m_ConditionMode: 2
-    m_ConditionEvent: isWalled
+    m_ConditionEvent: isHanging
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -4674245728939437230}
@@ -1243,7 +1243,7 @@ AnimatorStateTransition:
     m_ConditionEvent: SpeedMovement
     m_EventTreshold: 0
   - m_ConditionMode: 1
-    m_ConditionEvent: isWalled
+    m_ConditionEvent: isHanging
     m_EventTreshold: 0
   - m_ConditionMode: 2
     m_ConditionEvent: isHurt
@@ -1299,7 +1299,7 @@ AnimatorStateTransition:
     m_ConditionEvent: SpeedMovement
     m_EventTreshold: 0
   - m_ConditionMode: 1
-    m_ConditionEvent: isWalled
+    m_ConditionEvent: isHanging
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 3574259322340960242}
@@ -1358,7 +1358,7 @@ AnimatorStateTransition:
     m_ConditionEvent: isGrounded
     m_EventTreshold: 0
   - m_ConditionMode: 2
-    m_ConditionEvent: isWalled
+    m_ConditionEvent: isHanging
     m_EventTreshold: 0
   - m_ConditionMode: 2
     m_ConditionEvent: isHurt
