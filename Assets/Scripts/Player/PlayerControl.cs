@@ -100,7 +100,7 @@ public class PlayerControl : MonoBehaviour
                     CurrState = CharStates.WallHang;
                     RB2D.velocity = new Vector2(0, 0);
                 }
-                else if (Walled== true) 
+                else if (Walled == true && Tangible == true) 
                 {
                     CurrState = CharStates.Normal;
                     RB2D.velocity = new Vector2(0, 0);
@@ -114,7 +114,7 @@ public class PlayerControl : MonoBehaviour
                     CurrState = CharStates.FloUp;
                     AirJumps -= 1;
                 }
-                if (Grounded == true)
+                if (Grounded == true && Tangible == true)
                 {
                     CurrState = CharStates.Normal;
                     RB2D.velocity = new Vector2(0, 0);
@@ -134,7 +134,7 @@ public class PlayerControl : MonoBehaviour
                     CurrState = CharStates.Normal;
                     RB2D.velocity = new Vector2(0, 0);
                 }
-                if(Grounded == true)
+                if(Grounded == true && Tangible == true)
                 {
                     CurrState = CharStates.Normal;
                     RB2D.velocity = new Vector2(0, 0);
