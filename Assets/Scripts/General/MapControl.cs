@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MapControl : MonoBehaviour
 {
@@ -14,5 +15,10 @@ public class MapControl : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void GoToLevel(string LvID)
+    {
+        SceneManager.LoadScene(LvID);
     }
 }

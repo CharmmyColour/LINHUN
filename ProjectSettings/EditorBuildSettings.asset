@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/WorldMap.unity
+    guid: ae55e0b50bc29984a8712a1dd444cb44
+  - enabled: 1
+    path: Assets/Scenes/SpriteTesting.unity
+    guid: cd5bd4b5e76c8f64ba895537e3411485
   m_configObjects: {}
