@@ -48,6 +48,11 @@ public class MapControl : MonoBehaviour
                 TarNode = SelNode.BottomN;
                 Moving = true;
             }
+
+            if(Input.GetKeyDown(KeyCode.Space))
+            {
+                GoToLevel(SelNode.LvName);
+            }
         }
         else
         {

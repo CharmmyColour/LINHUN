@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class MapNode : MonoBehaviour
 {
-    //public Scene MyLevel;
+    public string LvName;
     public MapNode LeftN, RightN, TopN, BottomN;
 
     // Start is called before the first frame update

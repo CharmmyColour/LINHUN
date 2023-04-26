@@ -153,6 +153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d4c3d196e1499b4d831d00ad0c3a013, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LvName: 
   LeftN: {fileID: 1725540016}
   RightN: {fileID: 373460140}
   TopN: {fileID: 1274474445}
@@ -254,6 +255,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d4c3d196e1499b4d831d00ad0c3a013, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LvName: 
   LeftN: {fileID: 24193305}
   RightN: {fileID: 1905988764}
   TopN: {fileID: 1678361625}
@@ -370,6 +372,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d4c3d196e1499b4d831d00ad0c3a013, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LvName: LEVEL 1 FASE 2
   LeftN: {fileID: 0}
   RightN: {fileID: 1274474445}
   TopN: {fileID: 0}
@@ -540,6 +543,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d4c3d196e1499b4d831d00ad0c3a013, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LvName: SpriteTesting
   LeftN: {fileID: 1084483964}
   RightN: {fileID: 1678361625}
   TopN: {fileID: 0}
@@ -641,6 +645,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d4c3d196e1499b4d831d00ad0c3a013, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LvName: 
   LeftN: {fileID: 1274474445}
   RightN: {fileID: 1987721948}
   TopN: {fileID: 0}
@@ -742,6 +747,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d4c3d196e1499b4d831d00ad0c3a013, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LvName: SampleScene
   LeftN: {fileID: 0}
   RightN: {fileID: 24193305}
   TopN: {fileID: 1084483964}
@@ -843,6 +849,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d4c3d196e1499b4d831d00ad0c3a013, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LvName: 
   LeftN: {fileID: 373460140}
   RightN: {fileID: 0}
   TopN: {fileID: 1987721948}
@@ -1096,6 +1103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d4c3d196e1499b4d831d00ad0c3a013, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LvName: 
   LeftN: {fileID: 1678361625}
   RightN: {fileID: 0}
   TopN: {fileID: 0}
