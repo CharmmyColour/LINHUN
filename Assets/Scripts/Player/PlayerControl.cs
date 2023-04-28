@@ -171,6 +171,11 @@ public class PlayerControl : MonoBehaviour
         AirJumps = MaxJumps;
     }
 
+    public void NewRespawnPoint(Vector2 NewPoint)
+    {
+        RespawnPos = NewPoint;
+    }
+
     public void Death()
     {
         transform.position = RespawnPos;
