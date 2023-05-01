@@ -166,6 +166,14 @@ public class PlayerControl : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.transform.tag == "Danger")
+        {
+            Death();
+        }
+    }
+
     public void JumpsRestore()
     {
         AirJumps = MaxJumps;
