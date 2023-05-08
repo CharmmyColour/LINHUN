@@ -10,6 +10,7 @@ public class MapControl : MonoBehaviour
     public bool Moving;
     public MapNode SelNode, TarNode;
     public List<MapNode> Nodes;
+    public List<bool> LvCompletion;
 
     // Start is called before the first frame update
     void Start()
@@ -70,5 +71,10 @@ public class MapControl : MonoBehaviour
     public void GoToLevel(string LvID)
     {
         SceneManager.LoadScene(LvID);
+    }
+
+    public void ClearLevel(string LvID)
+    {
+        PlayerPrefs.SetInt("Lv" + LvID + "Completed", 1);
     }
 }

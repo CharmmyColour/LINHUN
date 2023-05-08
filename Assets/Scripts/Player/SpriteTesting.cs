@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class SpriteTesting : MonoBehaviour 
 {
+    public PlayerControl MyPlayer;
     //Animations
     public Animator anim;
     public bool isGrounded, isHanging, isJumping, isFalling, isHurt, isDead;
+    public int Airjumps;
 
     // Update is called once per frame
     void Update()
@@ -15,8 +17,8 @@ public class SpriteTesting : MonoBehaviour
         anim.SetBool("isHanging", isHanging);
         anim.SetBool("isJumping", isJumping);
         anim.SetBool("isFalling", isFalling);
-
-        anim.SetInteger("SpeedMovement", Mathf.RoundToInt((int)Input.GetAxisRaw("Horizontal")));
+        anim.SetInteger("jumps", Airjumps);
+        anim.SetInteger("SpeedMovement", Mathf.RoundToInt(MyPlayer.MoveX));
 
         
         if (PlayerControl.Grounded == true)
@@ -52,5 +54,6 @@ public class SpriteTesting : MonoBehaviour
             isJumping = false;
             isFalling = false;
         }
+        Airjumps = MyPlayer.AirJumps;
     }
 }

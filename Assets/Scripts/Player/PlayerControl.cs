@@ -11,7 +11,7 @@ public class PlayerControl : MonoBehaviour
     public LayerMask IsGround, IsGrab;
 
     //States
-    public enum CharStates { Normal, FloUp, FloDown, WallHang };
+    public enum CharStates { Normal, FloUp, FloDown, WallHang, Death };
     public static CharStates CurrState;
     public Color NoJColor, OneJColor;
     public bool Tangible;
@@ -22,8 +22,12 @@ public class PlayerControl : MonoBehaviour
     public int AirJumps, MaxJumps;
 
     //Keeping track
-    private int MoveX, MoveY;
+    public int MoveX, MoveY;
     public Vector2 RespawnPos;
+
+    //Pause
+    public bool Paused;
+    public GameObject PauseMenu;
 
     // Start is called before the first frame update
     void Start()
@@ -31,118 +35,143 @@ public class PlayerControl : MonoBehaviour
         Tangible = true;
         TangiTimer = 0;
         RespawnPos = transform.position;
+
+        Paused = false;
+        Time.timeScale = 1;
+        PauseMenu.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        MoveX = (int)Input.GetAxisRaw("Horizontal");
-        MoveY = (int)Input.GetAxisRaw("Vertical");
-        Grounded = Physics2D.OverlapCircle(GroundPoint.position, 0.05f, IsGround);
-        Cealed = Physics2D.OverlapCircle(CealingPoint.position, 0.05f, IsGround);
-        Walled = Physics2D.OverlapArea(WallPointA.position, WallPointB.position, IsGround);
-        Grabbed = Physics2D.OverlapArea(WallPointA.position, WallPointB.position, IsGrab);
-
-        if (Grounded == true)
+        if(Paused == false)
         {
-            AirJumps = 0;
-        }
+            MoveX = (int)Input.GetAxisRaw("Horizontal");
+            MoveY = (int)Input.GetAxisRaw("Vertical");
+            Grounded = Physics2D.OverlapCircle(GroundPoint.position, 0.05f, IsGround);
+            Cealed = Physics2D.OverlapCircle(CealingPoint.position, 0.05f, IsGround);
+            Walled = Physics2D.OverlapArea(WallPointA.position, WallPointB.position, IsGround);
+            Grabbed = Physics2D.OverlapArea(WallPointA.position, WallPointB.position, IsGrab);
 
-        if (Tangible == true)
-        {
-            Physics2D.IgnoreLayerCollision(3, 7, false);
-            TangiTimer = 0;
-            if (Input.GetKeyDown(KeyCode.LeftShift))
+            if (Grounded == true)
             {
-                Tangible = false;
+                AirJumps = 0;
+            }
+
+            if (Tangible == true)
+            {
+                Physics2D.IgnoreLayerCollision(3, 7, false);
+                TangiTimer = 0;
+                if (Input.GetKeyDown(KeyCode.LeftShift))
+                {
+                    Tangible = false;
+                }
+            }
+            else
+            {
+                Physics2D.IgnoreLayerCollision(3, 7, true);
+                TangiTimer += Time.deltaTime;
+                if (TangiTimer >= 1)
+                {
+                    Tangible = true;
+                }
+            }
+
+            switch (CurrState)
+            {
+                case CharStates.Normal:
+                    RB2D.gravityScale = 1;
+
+                    if (MoveX != 0 && RB2D.velocity.y >= 0)
+                    {
+                        transform.localScale = new Vector3(1 * MoveX, 1, 1);
+                        transform.position += new Vector3(transform.localScale.x, 0, 0) * Speed * Time.deltaTime;
+                    }
+
+                    if (Input.GetButtonDown("Jump") && (Grounded == true || AirJumps > 0))
+                    {
+                        CurrState = CharStates.FloUp;
+                        AirJumps -= 1;
+                    }
+                    break;
+                case CharStates.FloUp:
+                    //Action
+                    RB2D.velocity = new Vector3(Speed * transform.localScale.x, JumpSpeed);
+
+                    //Input for jump
+                    if (Input.GetButtonDown("Jump"))
+                    {
+                        CurrState = CharStates.FloDown;
+                    }
+
+                    //Check for walls
+                    if (Grabbed == true)
+                    {
+                        CurrState = CharStates.WallHang;
+                        RB2D.velocity = new Vector2(0, 0);
+                    }
+                    else if (Walled == true && Tangible == true)
+                    {
+                        CurrState = CharStates.Normal;
+                        RB2D.velocity = new Vector2(0, 0);
+                    }
+                    break;
+                case CharStates.FloDown:
+                    RB2D.velocity = new Vector3(Speed * transform.localScale.x, -JumpSpeed);
+
+                    if (Input.GetButtonDown("Jump") && AirJumps > 0)
+                    {
+                        CurrState = CharStates.FloUp;
+                        AirJumps -= 1;
+                    }
+                    if (Grounded == true && Tangible == true)
+                    {
+                        CurrState = CharStates.Normal;
+                        RB2D.velocity = new Vector2(0, 0);
+                    }
+                    break;
+                case CharStates.WallHang:
+                    RB2D.velocity = new Vector2(0, 0);
+                    RB2D.gravityScale = 0;
+
+                    if (Input.GetButtonDown("Jump"))
+                    {
+                        transform.localScale = new Vector3(transform.localScale.x * -1, 1, 1);
+                        CurrState = CharStates.FloUp;
+                    }
+                    if (Grabbed != true)
+                    {
+                        CurrState = CharStates.Normal;
+                        RB2D.velocity = new Vector2(0, 0);
+                    }
+                    if (Grounded == true && Tangible == true)
+                    {
+                        CurrState = CharStates.Normal;
+                        RB2D.velocity = new Vector2(0, 0);
+                    }
+                    break;
+                case CharStates.Death:
+                    RB2D.velocity = new Vector2(0, 0);
+                    RB2D.gravityScale = 0;
+                    break;
+            }
+
+            //Death if fall very far down
+            if (transform.position.y < -20) { Death(); }
+
+            //Pause
+            if (Input.GetButtonDown("Pause"))
+            {
+                PausePlay();
             }
         }
         else
         {
-            Physics2D.IgnoreLayerCollision(3, 7, true);
-            TangiTimer += Time.deltaTime;
-            if (TangiTimer >= 1)
+            if (Input.GetButtonDown("Pause"))
             {
-                Tangible = true;
+                Unpause();
             }
         }
-
-        switch (CurrState)
-        {
-            case CharStates.Normal:
-                RB2D.gravityScale = 1;
-
-                if (MoveX != 0 && RB2D.velocity.y >= 0)
-                {
-                    transform.localScale = new Vector3(1 * MoveX, 1, 1);
-                    transform.position += new Vector3(transform.localScale.x, 0, 0) * Speed * Time.deltaTime;
-                }
-
-                if (Input.GetButtonDown("Jump") && (Grounded == true || AirJumps > 0))
-                {
-                    CurrState = CharStates.FloUp;
-                    AirJumps -= 1;
-                }
-                break;
-            case CharStates.FloUp:
-                //Action
-                RB2D.velocity = new Vector3(Speed * transform.localScale.x, JumpSpeed);
-
-                //Input for jump
-                if (Input.GetButtonDown("Jump"))
-                {
-                    CurrState = CharStates.FloDown;
-                }
-
-                //Check for walls
-                if(Grabbed == true)
-                {
-                    CurrState = CharStates.WallHang;
-                    RB2D.velocity = new Vector2(0, 0);
-                }
-                else if (Walled == true && Tangible == true) 
-                {
-                    CurrState = CharStates.Normal;
-                    RB2D.velocity = new Vector2(0, 0);
-                }
-                break;
-            case CharStates.FloDown:
-                RB2D.velocity = new Vector3(Speed * transform.localScale.x, -JumpSpeed);
-
-                if (Input.GetButtonDown("Jump") && AirJumps > 0)
-                {
-                    CurrState = CharStates.FloUp;
-                    AirJumps -= 1;
-                }
-                if (Grounded == true && Tangible == true)
-                {
-                    CurrState = CharStates.Normal;
-                    RB2D.velocity = new Vector2(0, 0);
-                }
-                break;
-            case CharStates.WallHang:
-                RB2D.velocity = new Vector2(0, 0);
-                RB2D.gravityScale = 0;
-
-                if (Input.GetButtonDown("Jump"))
-                {
-                    transform.localScale = new Vector3(transform.localScale.x * -1, 1, 1);
-                    CurrState = CharStates.FloUp;
-                }
-                if(Grabbed != true)
-                {
-                    CurrState = CharStates.Normal;
-                    RB2D.velocity = new Vector2(0, 0);
-                }
-                if(Grounded == true && Tangible == true)
-                {
-                    CurrState = CharStates.Normal;
-                    RB2D.velocity = new Vector2(0, 0);
-                }
-                break;
-        }
-
-        if(transform.position.y < -20) { Death(); }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -182,6 +211,21 @@ public class PlayerControl : MonoBehaviour
     public void NewRespawnPoint(Vector2 NewPoint)
     {
         RespawnPos = NewPoint;
+    }
+
+    //Pause and Un-Pause
+    public void PausePlay()
+    {
+        Paused = true;
+        Time.timeScale = 0;
+        PauseMenu.SetActive(true);
+    }
+
+    public void Unpause()
+    {
+        Paused = false;
+        Time.timeScale = 1;
+        PauseMenu.SetActive(false);
     }
 
     public void Death()

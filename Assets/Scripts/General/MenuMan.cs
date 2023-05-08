@@ -26,4 +26,9 @@ public class MenuMan : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void EraseGame()
+    {
+        
+    }
 }
