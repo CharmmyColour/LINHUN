@@ -24,7 +24,7 @@ public class PlayerControl : MonoBehaviour
 
     //Keeping track
     public int MoveX, MoveY;
-    public Vector2 RespawnPos;
+    public Vector3 RespawnPos;
 
     //Pause
     public bool Paused;
