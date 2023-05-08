@@ -13518,7 +13518,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7afd2a3637cc9ab44a14ba71437d0987, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Destiny: LEVEL 1 FASE 1
+  Destiny: WoeldMap
 --- !u!1 &1643042357
 GameObject:
   m_ObjectHideFlags: 0
