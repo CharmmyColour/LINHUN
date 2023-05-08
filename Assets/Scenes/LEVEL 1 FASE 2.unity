@@ -224,7 +224,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f76259db217ddd4195ec22625b161c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MyPlayer: {fileID: 0}
+  MyPlayer: {fileID: 184922490}
   anim: {fileID: 184922486}
   isGrounded: 0
   isHanging: 0
@@ -4836,7 +4836,7 @@ GameObject:
   - component: {fileID: 498722217}
   m_Layer: 0
   m_Name: Door
-  m_TagString: Untagged
+  m_TagString: Goal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerControl : MonoBehaviour
 {
@@ -201,6 +202,11 @@ public class PlayerControl : MonoBehaviour
         {
             Death();
         }
+
+        if (collision.transform.tag == "Goal")
+        {
+            Victory();
+        }
     }
 
     public void JumpsRestore()
@@ -233,5 +239,10 @@ public class PlayerControl : MonoBehaviour
         transform.position = RespawnPos;
         CurrState = CharStates.Normal;
         RB2D.velocity = new Vector2(0, 0);
+    }
+
+    public void Victory()
+    {
+        SceneManager.LoadScene("WorldMap");
     }
 }
