@@ -7,6 +7,7 @@ TagManager:
   - Ground
   - Danger
   - Grabbable
+  - Goal
   layers:
   - Default
   - TransparentFX
