@@ -205,7 +205,7 @@ public class PlayerControl : MonoBehaviour
 
         if (collision.transform.tag == "Goal")
         {
-            Victory();
+            Victory(collision.GetComponent<ToNextLevel>().Destiny);
         }
     }
 
@@ -241,8 +241,8 @@ public class PlayerControl : MonoBehaviour
         RB2D.velocity = new Vector2(0, 0);
     }
 
-    public void Victory()
+    public void Victory(string Destiny)
     {
-        SceneManager.LoadScene("WorldMap");
+        SceneManager.LoadScene(Destiny);
     }
 }

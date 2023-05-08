@@ -5081,7 +5081,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 81
-      m_TileSpriteIndex: 13
+      m_TileSpriteIndex: 26
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -11921,7 +11921,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 13
-      m_TileSpriteIndex: 12
+      m_TileSpriteIndex: 13
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -12191,7 +12191,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 11
-      m_TileSpriteIndex: 11
+      m_TileSpriteIndex: 12
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -12201,7 +12201,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 8
-      m_TileSpriteIndex: 9
+      m_TileSpriteIndex: 11
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -12866,16 +12866,16 @@ Tilemap:
     m_Data: {fileID: -766457073, guid: d0930d4475b884443ac27dd2e272efb0, type: 3}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 1
-    m_Data: {fileID: -408405293, guid: 6b018057bdc162e4f9ed2ab208dc1a0b, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 34
     m_Data: {fileID: 1193039758, guid: 6b018057bdc162e4f9ed2ab208dc1a0b, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: -408405293, guid: 6b018057bdc162e4f9ed2ab208dc1a0b, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 149469881, guid: 6b018057bdc162e4f9ed2ab208dc1a0b, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 1255620405, guid: 6b018057bdc162e4f9ed2ab208dc1a0b, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: -1939962513, guid: d0930d4475b884443ac27dd2e272efb0, type: 3}
   - m_RefCount: 6
     m_Data: {fileID: 477199922, guid: 6b018057bdc162e4f9ed2ab208dc1a0b, type: 3}
   - m_RefCount: 44
@@ -12900,8 +12900,8 @@ Tilemap:
     m_Data: {fileID: -14982496, guid: 6b018057bdc162e4f9ed2ab208dc1a0b, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: -1255937854, guid: 6b018057bdc162e4f9ed2ab208dc1a0b, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: -1939962513, guid: d0930d4475b884443ac27dd2e272efb0, type: 3}
   - m_RefCount: 2
     m_Data: {fileID: 655776855, guid: 6b018057bdc162e4f9ed2ab208dc1a0b, type: 3}
   - m_RefCount: 1
@@ -13310,9 +13310,10 @@ GameObject:
   - component: {fileID: 1561016348}
   - component: {fileID: 1561016347}
   - component: {fileID: 1561016349}
+  - component: {fileID: 1561016350}
   m_Layer: 0
   m_Name: Door
-  m_TagString: Untagged
+  m_TagString: Goal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13505,6 +13506,19 @@ TilemapCollider2D:
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
+--- !u!114 &1561016350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1561016345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7afd2a3637cc9ab44a14ba71437d0987, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Destiny: LEVEL 1 FASE 1
 --- !u!1 &1643042357
 GameObject:
   m_ObjectHideFlags: 0
