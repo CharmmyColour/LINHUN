@@ -4180,7 +4180,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d4c3d196e1499b4d831d00ad0c3a013, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LvName: LEVEL 1 FASE 2
+  LvName: TUTORIAL
   LeftN: {fileID: 0}
   RightN: {fileID: 0}
   TopN: {fileID: 0}
@@ -4294,7 +4294,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -221507195, guid: c7b889aa56c8cd44b941d0761d356a09, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4453,7 +4453,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d4c3d196e1499b4d831d00ad0c3a013, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LvName: 
+  LvName: LEVEL 1 FASE 1
   LeftN: {fileID: 1274474445}
   RightN: {fileID: 0}
   TopN: {fileID: 1987721948}
