@@ -1189,7 +1189,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Timer: 0
-  GoalTime: 0
+  GoalTime: 1
   Pos1: {fileID: 216821515}
   Pos2: {fileID: 458294884}
   Going1: 0
