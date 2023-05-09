@@ -1642,6 +1642,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 356456263}
     m_Modifications:
+    - target: {fileID: 2714673351174636990, guid: 1b61ceb9cbdf0114fb54561a979e7454, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2112762653}
+    - target: {fileID: 2714673351174636990, guid: 1b61ceb9cbdf0114fb54561a979e7454, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ExitToMap
+      objectReference: {fileID: 0}
+    - target: {fileID: 5088752960519417067, guid: 1b61ceb9cbdf0114fb54561a979e7454, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2112762653}
+    - target: {fileID: 5088752960519417067, guid: 1b61ceb9cbdf0114fb54561a979e7454, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Death
+      objectReference: {fileID: 0}
     - target: {fileID: 6192519431695534766, guid: 1b61ceb9cbdf0114fb54561a979e7454, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

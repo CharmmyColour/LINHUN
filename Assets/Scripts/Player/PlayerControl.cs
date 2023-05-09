@@ -236,9 +236,16 @@ public class PlayerControl : MonoBehaviour
 
     public void Death()
     {
+        Unpause();
         transform.position = RespawnPos;
         CurrState = CharStates.Normal;
         RB2D.velocity = new Vector2(0, 0);
+    }
+
+    public void ExitToMap(string Destiny)
+    {
+        Unpause();
+        SceneManager.LoadScene(Destiny);
     }
 
     public void Victory(string Destiny)

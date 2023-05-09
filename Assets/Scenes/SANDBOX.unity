@@ -2242,6 +2242,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1416545605}
     m_Modifications:
+    - target: {fileID: 2714673351174636990, guid: 1b61ceb9cbdf0114fb54561a979e7454, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 4968418946428860246}
+    - target: {fileID: 2714673351174636990, guid: 1b61ceb9cbdf0114fb54561a979e7454, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ExitToMap
+      objectReference: {fileID: 0}
+    - target: {fileID: 5088752960519417067, guid: 1b61ceb9cbdf0114fb54561a979e7454, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 4968418946428860246}
+    - target: {fileID: 5088752960519417067, guid: 1b61ceb9cbdf0114fb54561a979e7454, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Death
+      objectReference: {fileID: 0}
     - target: {fileID: 6192519431695534766, guid: 1b61ceb9cbdf0114fb54561a979e7454, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3359,11 +3375,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4968418945617195029, guid: 4431b5f747a1b2f48b2b9afabeba7c11, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 41.8
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 4968418945617195029, guid: 4431b5f747a1b2f48b2b9afabeba7c11, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.68
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4968418945617195029, guid: 4431b5f747a1b2f48b2b9afabeba7c11, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3427,6 +3443,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4431b5f747a1b2f48b2b9afabeba7c11, type: 3}
+--- !u!114 &4968418946428860246 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4968418945617195031, guid: 4431b5f747a1b2f48b2b9afabeba7c11, type: 3}
+  m_PrefabInstance: {fileID: 4968418946428860245}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09046e1a99940a141a15a1e9c432ac33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &7016261407086538227
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -17,7 +17,7 @@ public class SpriteTesting : MonoBehaviour
         anim.SetBool("isHanging", isHanging);
         anim.SetBool("isJumping", isJumping);
         anim.SetBool("isFalling", isFalling);
-        anim.SetInteger("jumps", Airjumps);
+        anim.SetInteger("jumps", MyPlayer.AirJumps);
         anim.SetInteger("SpeedMovement", Mathf.RoundToInt(MyPlayer.MoveX));
 
         
