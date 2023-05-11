@@ -1,0 +1,1619 @@
+fileFormatVersion: 2
+guid: 316bd9a6b1d4d7a4ea3ad2352b61c2cf
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HighlanderUpsideDown_0
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 233
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8997a2c0088e5d54e99f0ad80c6e2402
+      internalID: 939356494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighlanderUpsideDown_1
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 233
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecf9349ec2e8cbd4c9b2dad151515850
+      internalID: -1921346397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighlanderUpsideDown_2
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 233
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6e70c88f53f51447bcd0d678b203e89
+      internalID: -1466466398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighlanderUpsideDown_3
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 217
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4007ebc4014b5b848a08d2dddb8a6167
+      internalID: -14256655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighlanderUpsideDown_4
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 217
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94295aa50c27efa45b170b5748ffcb56
+      internalID: -1315853840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighlanderUpsideDown_5
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 217
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e41ca093b944734883fd213a415675e
+      internalID: 1691353207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighlanderUpsideDown_6
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 217
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45ac31f06683d9f4cba900d4758ce545
+      internalID: 1486885657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighlanderUpsideDown_7
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 217
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ad5a0e8df7fd2a4b8023cdef9bc68af
+      internalID: 1441331514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighlanderUpsideDown_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 217
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f64968ea8dcd31b45ba6805a47d64d20
+      internalID: -1548539786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighlanderUpsideDown_9
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 201
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f4b0980465bf8a469f563fac8652f19
+      internalID: -970491433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighlanderUpsideDown_10
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 201
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72d4299fbbc73984fb68b30b6c462beb
+      internalID: -865294283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighlanderUpsideDown_11
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 201
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67b8c25894c368449aab13001c81ba4e
+      internalID: -641478341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighlanderUpsideDown_12
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 201
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 749e497c89c5c8742851973a56547ee2
+      internalID: 1435044740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighlanderUpsideDown_13
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 201
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50b547fe87ef99f4f936c0159e476415
+      internalID: 519854811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighlanderUpsideDown_14
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 201
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe7ce4cedc2a95144ad3f2c981db1791
+      internalID: -1638858606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighlanderUpsideDown_15
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 201
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79d011adf63484040b955ea4430bf7bb
+      internalID: 2025750464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighlanderUpsideDown_16
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 201
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3518c2c8d6e739428bc311873007cb6
+      internalID: 444995095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighlanderUpsideDown_17
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 201
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b729213cc4699c044bd953c6358e1fc3
+      internalID: -2125387564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighlanderUpsideDown_18
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 185
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa81d3d4b1b9b7e4e9ef3f6796e3167f
+      internalID: -1061624618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighlanderUpsideDown_19
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 185
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89707c2677b5fe3428cf2275c9c52f81
+      internalID: 1435372177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighlanderUpsideDown_20
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 185
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8b995e701f7c7a46a1c6a88d5895665
+      internalID: -1371805510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighlanderUpsideDown_21
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 185
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a8109d8d80abb441915bafaaaf43f1f
+      internalID: 956053586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighlanderUpsideDown_22
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 185
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2f236851a5d3bf4189827485c9a0f2e
+      internalID: -1825232981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighlanderUpsideDown_23
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 185
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b24ed56052b34042981a83967b948cb
+      internalID: -1612989118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighlanderUpsideDown_24
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 185
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62086ab8f2a5a4d4992840cf486cb933
+      internalID: -58262720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighlanderUpsideDown_25
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 185
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee23ec4f0ca5feb47a4e7f94a6571b25
+      internalID: -1186770225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighlanderUpsideDown_26
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 185
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93359fa3d865e954d88230c772c7c9a2
+      internalID: -1210735834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighlanderUpsideDown_27
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 185
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b28d816d686aad743a6df17f70bbf4a6
+      internalID: 2137200569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighlanderUpsideDown_28
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 169
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bbd81683f3765d4c80839f87540f26b
+      internalID: -1235608432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighlanderUpsideDown_29
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 169
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec2f94f4305fe3d46bbf12d4a7cdc1d9
+      internalID: -1227539743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighlanderUpsideDown_30
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 169
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 338c0bb8287125147b9377168fe28d18
+      internalID: 161008022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighlanderUpsideDown_31
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 169
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed309caca078a6d4d9e31ec2ff6bdf55
+      internalID: -1934013134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighlanderUpsideDown_32
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 169
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd4985cd3cb10d94e8f51c71b7419b01
+      internalID: -1141038403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighlanderUpsideDown_33
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 169
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ade3f8bf8465d18409f9908270c7de8f
+      internalID: 1967723805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighlanderUpsideDown_34
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 169
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1462f533429da504d82eca177afe8d22
+      internalID: -29274273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighlanderUpsideDown_35
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 169
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf44b0b3fe653f14488807505b629a60
+      internalID: 2023966418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighlanderUpsideDown_36
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 169
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a0ba37a9f20e484eb10fe0389f4d128
+      internalID: 1400568874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighlanderUpsideDown_37
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 153
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 784089a24edf9834fa2a1a801c5d5d5d
+      internalID: 155926061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighlanderUpsideDown_38
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 153
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcf577df2c4534d49b22a2bca374157a
+      internalID: -1244896988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighlanderUpsideDown_39
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 153
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c810a3fbd3a16064b8783325114b5543
+      internalID: 364064127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighlanderUpsideDown_40
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 153
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4d6ec2b694b1fa4d97643500ed5d77f
+      internalID: -2074065674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighlanderUpsideDown_41
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 153
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d54cea48f642ce246aed96206c274be0
+      internalID: 1189301598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighlanderUpsideDown_42
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 153
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 258b944734805774cb2e8987a98bb6b5
+      internalID: -1455917745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighlanderUpsideDown_43
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 153
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c102c4ea4107cff45b52dbef803307ca
+      internalID: 865913665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighlanderUpsideDown_44
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 153
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa697eecd0edf034c8a208c62152b619
+      internalID: 1108485041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighlanderUpsideDown_45
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 153
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50f753dde9d5c654aaa9e0e670972526
+      internalID: 217906978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighlanderUpsideDown_46
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 153
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0218faf1fb001e54c95401c8eb81d4d8
+      internalID: 241519741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighlanderUpsideDown_47
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 137
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d88e327436f8a640898bd03086ce1f2
+      internalID: 359071916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighlanderUpsideDown_48
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 137
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57793b3ec6815354399677658acf1935
+      internalID: 97653194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighlanderUpsideDown_49
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 137
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d165639dd3efa5c4781408ebdf05f4f1
+      internalID: 1300139178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighlanderUpsideDown_50
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 137
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 375ff86437faedb4784eeb2aba957a7c
+      internalID: -360345060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighlanderUpsideDown_51
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 137
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 454950f21d79f37499cfd18dba04e261
+      internalID: 1797646915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighlanderUpsideDown_52
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 137
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff6fced617be4cc449c434212abae290
+      internalID: 299397780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighlanderUpsideDown_53
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 121
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be9fc85edebcc7f4c8216aa8c107adab
+      internalID: -1300748542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighlanderUpsideDown_54
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 121
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b138fc4c6d3af3b49aa0534b85cd904e
+      internalID: 846756084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighlanderUpsideDown_55
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 121
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61125f8b06c0e204282e545995732b0f
+      internalID: -1385808179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighlanderUpsideDown_56
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 121
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca390c9690b6d924a9677ff5dd30177a
+      internalID: 509992306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighlanderUpsideDown_57
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 121
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aa729e11e8803a4a843c2462e7f04e1
+      internalID: -1388968736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighlanderUpsideDown_58
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 89
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dd160c51f47f3446bbddd8d1cdd633e
+      internalID: 1593992345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighlanderUpsideDown_59
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 89
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59760822ca401ba4ebcd716eaabb5971
+      internalID: -2093597103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighlanderUpsideDown_60
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 89
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 103ad3ca2ade74843aa9fa6586a0fd11
+      internalID: 167014440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighlanderUpsideDown_61
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 89
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4deba4c9ffc32254a8fa0a8029d92167
+      internalID: -1851228061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighlanderUpsideDown_62
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 89
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae96aa0d9ba59624eb21ea7392d752e6
+      internalID: -1382975356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighlanderUpsideDown_63
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 89
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58bf9c0495374a642b3bd1d9e12d4afd
+      internalID: 1610775580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighlanderUpsideDown_64
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 89
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5537fdd5353b8545880a3593d27890d
+      internalID: -495682311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighlanderUpsideDown_65
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 89
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da3179a4dc0e37f44b070b4a6b684495
+      internalID: -2029600330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighlanderUpsideDown_66
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 89
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f3970245248e8f4b8925fc27357bd61
+      internalID: -905061490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HighlanderUpsideDown_67
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 89
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71b8a421085e51f46a31b4d6b652c5e5
+      internalID: 1618220702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      HighlanderUpsideDown_48: 97653194
+      HighlanderUpsideDown_10: -865294283
+      HighlanderUpsideDown_51: 1797646915
+      HighlanderUpsideDown_55: -1385808179
+      HighlanderUpsideDown_25: -1186770225
+      HighlanderUpsideDown_15: 2025750464
+      HighlanderUpsideDown_45: 217906978
+      HighlanderUpsideDown_1: -1921346397
+      HighlanderUpsideDown_8: -1548539786
+      HighlanderUpsideDown_14: -1638858606
+      HighlanderUpsideDown_20: -1371805510
+      HighlanderUpsideDown_49: 1300139178
+      HighlanderUpsideDown_32: -1141038403
+      HighlanderUpsideDown_12: 1435044740
+      HighlanderUpsideDown_42: -1455917745
+      HighlanderUpsideDown_59: -2093597103
+      HighlanderUpsideDown_3: -14256655
+      HighlanderUpsideDown_47: 359071916
+      HighlanderUpsideDown_16: 444995095
+      HighlanderUpsideDown_64: -495682311
+      HighlanderUpsideDown_57: -1388968736
+      HighlanderUpsideDown_2: -1466466398
+      HighlanderUpsideDown_27: 2137200569
+      HighlanderUpsideDown_40: -2074065674
+      HighlanderUpsideDown_26: -1210735834
+      HighlanderUpsideDown_6: 1486885657
+      HighlanderUpsideDown_30: 161008022
+      HighlanderUpsideDown_22: -1825232981
+      HighlanderUpsideDown_66: -905061490
+      HighlanderUpsideDown_24: -58262720
+      HighlanderUpsideDown_13: 519854811
+      HighlanderUpsideDown_19: 1435372177
+      HighlanderUpsideDown_5: 1691353207
+      HighlanderUpsideDown_7: 1441331514
+      HighlanderUpsideDown_58: 1593992345
+      HighlanderUpsideDown_21: 956053586
+      HighlanderUpsideDown_33: 1967723805
+      HighlanderUpsideDown_18: -1061624618
+      HighlanderUpsideDown_37: 155926061
+      HighlanderUpsideDown_17: -2125387564
+      HighlanderUpsideDown_31: -1934013134
+      HighlanderUpsideDown_52: 299397780
+      HighlanderUpsideDown_23: -1612989118
+      HighlanderUpsideDown_38: -1244896988
+      HighlanderUpsideDown_60: 167014440
+      HighlanderUpsideDown_0: 939356494
+      HighlanderUpsideDown_56: 509992306
+      HighlanderUpsideDown_46: 241519741
+      HighlanderUpsideDown_61: -1851228061
+      HighlanderUpsideDown_65: -2029600330
+      HighlanderUpsideDown_11: -641478341
+      HighlanderUpsideDown_28: -1235608432
+      HighlanderUpsideDown_41: 1189301598
+      HighlanderUpsideDown_62: -1382975356
+      HighlanderUpsideDown_34: -29274273
+      HighlanderUpsideDown_63: 1610775580
+      HighlanderUpsideDown_39: 364064127
+      HighlanderUpsideDown_44: 1108485041
+      HighlanderUpsideDown_54: 846756084
+      HighlanderUpsideDown_35: 2023966418
+      HighlanderUpsideDown_50: -360345060
+      HighlanderUpsideDown_67: 1618220702
+      HighlanderUpsideDown_43: 865913665
+      HighlanderUpsideDown_29: -1227539743
+      HighlanderUpsideDown_9: -970491433
+      HighlanderUpsideDown_36: 1400568874
+      HighlanderUpsideDown_53: -1300748542
+      HighlanderUpsideDown_4: -1315853840
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
