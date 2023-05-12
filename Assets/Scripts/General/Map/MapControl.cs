@@ -72,9 +72,4 @@ public class MapControl : MonoBehaviour
     {
         SceneManager.LoadScene(LvID);
     }
-
-    public void ClearLevel(string LvID)
-    {
-        PlayerPrefs.SetInt("Lv" + LvID + "Completed", 1);
-    }
 }

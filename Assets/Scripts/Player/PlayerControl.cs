@@ -250,6 +250,7 @@ public class PlayerControl : MonoBehaviour
 
     public void Victory(string Destiny)
     {
+        SaveData.LevelClear();
         SceneManager.LoadScene(Destiny);
     }
 }
